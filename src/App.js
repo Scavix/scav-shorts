@@ -1,25 +1,40 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+import Links from './Links';
 import './App.css';
 
-function App() {
+const JsonParser = () => {
+  const [jsonData, setJsonData] = useState([]);
+  console.log("fratm");
+  useEffect(() => {
+    const url = 'https://scavix.github.io/movies.json';      
+
+    fetch(url)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setJsonData(data);
+      })
+      .catch((error) => {
+        console.error('Error fetching JSON:', error);
+      });
+  }, []);
+
+  if (jsonData.length === 0) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>Shorts</h1>
+        <div>
+            <Links links={jsonData} />
+        </div>
     </div>
   );
-}
+};
 
-export default App;
+export default JsonParser;
