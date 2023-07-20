@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/scav-shorts/static/css/main.073c9b0a.css",
-    "main.js": "/scav-shorts/static/js/main.2ec96ed8.js",
-    "static/js/787.28cb0dcd.chunk.js": "/scav-shorts/static/js/787.28cb0dcd.chunk.js",
-    "static/media/logo.svg": "/scav-shorts/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/scav-shorts/static/css/main.50f6311e.css",
+    "main.js": "/scav-shorts/static/js/main.04ed01c2.js",
     "index.html": "/scav-shorts/index.html",
-    "main.073c9b0a.css.map": "/scav-shorts/static/css/main.073c9b0a.css.map",
-    "main.2ec96ed8.js.map": "/scav-shorts/static/js/main.2ec96ed8.js.map",
-    "787.28cb0dcd.chunk.js.map": "/scav-shorts/static/js/787.28cb0dcd.chunk.js.map"
+    "main.50f6311e.css.map": "/scav-shorts/static/css/main.50f6311e.css.map",
+    "main.04ed01c2.js.map": "/scav-shorts/static/js/main.04ed01c2.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.2ec96ed8.js"
+    "static/css/main.50f6311e.css",
+    "static/js/main.04ed01c2.js"
   ]
 }
