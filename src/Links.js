@@ -53,6 +53,9 @@ function Links({ links }) {
           <div>
             <p>Name: {randomMovie.name}</p>
             <p>Link: {randomMovie.url}</p>
+            <p>Director: {randomMovie.director}</p>
+            <p>Rate: {randomMovie.rate}</p>
+            <p>Description: {randomMovie.description}</p>
             <p align="center"><iframe title={randomMovie.name} src={'https://www.youtube.com/embed/'+ randomMovie.youtubeid} width="640px" height="320px"/></p>
           </div>
         )}
