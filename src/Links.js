@@ -7,11 +7,14 @@ function Links({ links, csvs }) {
   const [randomMovieCsv, setRandomMovieCsv] = useState(null);
 
   const filteredLinks = links.filter((link) =>
-    link.name.toLowerCase().includes(filter.toLowerCase())
+    link.name.toLowerCase().includes(filter.toLowerCase()) ||
+    link.director.toLowerCase().includes(filter.toLowerCase()) ||
+    (link.rate+'').toLowerCase().includes(filter.toLowerCase())
   );
 
   const filteredCsvs = csvs.filter((row) =>
-    row.Title.toLowerCase().includes(filter.toLowerCase())
+    row.Title.toLowerCase().includes(filter.toLowerCase()) ||
+    (row['Your Rating']+'').toLowerCase().includes(filter.toLowerCase())
   );
   
   const handleFilterChange = (event) => {
