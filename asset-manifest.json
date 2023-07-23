@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/scav-shorts/static/css/main.50f6311e.css",
-    "main.js": "/scav-shorts/static/js/main.f0a16d88.js",
+    "main.css": "/scav-shorts/static/css/main.994f3990.css",
+    "main.js": "/scav-shorts/static/js/main.50725d79.js",
     "index.html": "/scav-shorts/index.html",
-    "main.50f6311e.css.map": "/scav-shorts/static/css/main.50f6311e.css.map",
-    "main.f0a16d88.js.map": "/scav-shorts/static/js/main.f0a16d88.js.map"
+    "main.994f3990.css.map": "/scav-shorts/static/css/main.994f3990.css.map",
+    "main.50725d79.js.map": "/scav-shorts/static/js/main.50725d79.js.map"
   },
   "entrypoints": [
-    "static/css/main.50f6311e.css",
-    "static/js/main.f0a16d88.js"
+    "static/css/main.994f3990.css",
+    "static/js/main.50725d79.js"
   ]
 }
