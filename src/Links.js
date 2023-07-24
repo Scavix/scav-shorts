@@ -74,18 +74,21 @@ function Links({ links, csvs }) {
     const targetTitle = document.getElementById("myTitle");
     const targetDiv = document.getElementById("list-list-id");
     const targetDivSuggest = document.getElementById("a-random-short-id");
+    const targetDivSuggestMovie = document.getElementById("a-random-film-id");
     const targetDivFilm = document.getElementById("csv-list-id");
+    const targetButton = document.getElementById("a-button-id");
     if (targetTitle.innerHTML === "Movies") {
       targetTitle.innerHTML = "Shorts";
       targetDiv.style.display = "block";
-      targetDivSuggest.style.display = "none";
-      targetDivFilm.style.display = "none";
+      targetDivFilm.style.display = "none";  
     } else {
       targetTitle.innerHTML = "Movies";
       targetDiv.style.display = "none";
-      targetDivSuggest.style.display = "none";
       targetDivFilm.style.display = "block";
     }
+    targetDivSuggestMovie.style.display = "none";
+    targetDivSuggest.style.display = "none";
+    targetButton.innerHTML = "Suggest";
   };
 
   useEffect(() => {
